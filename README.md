@@ -1,14 +1,29 @@
-# Siniff - Öğrenci Bilgi Yönetim Sistemi
+# Sinif - Sınıf Rehberlik Uygulaması
 
-Ortaokul ve lise sınıf rehber öğretmenleri için geliştirilmiş öğrenci bilgi yönetim sistemi.
+Ortaokul ve lise sınıf rehber öğretmenleri için geliştirilmiş kapsamlı öğrenci bilgi yönetim ve rehberlik sistemi.
 
-## Özellikler
+## 🚀 Özellikler
 
+### 📚 Temel Yönetim
 - **Eğitim Yılı Yönetimi**: Farklı eğitim yılları için ayrı yönetim
 - **Sınıf Yönetimi**: Her eğitim yılı için sınıf oluşturma ve yönetme
 - **Öğrenci Kayıt**: Detaylı öğrenci bilgileri kaydetme
 - **Veli Bilgileri**: Anne, baba ve diğer veli bilgileri
 - **Fotoğraf Yükleme**: Öğrenci fotoğrafları
+
+### 🎯 Rehberlik ve Takip
+- **Rehberlik Planları**: Yıllık rehberlik planları oluşturma
+- **Rehberlik Etkinlikleri**: Planlanan etkinlikleri takip etme
+- **Takvim Görünümü**: Etkinlikleri takvimde görüntüleme
+- **Dosya Yükleme**: Etkinlik belgelerini yükleme
+
+### 📊 Raporlama ve Analiz
+- **AI Destekli Raporlar**: Otomatik rapor oluşturma
+- **PDF Raporları**: Öğrenci listesi ve detay raporları
+- **Excel Dışa Aktarma**: Verileri Excel formatında dışa aktarma
+- **Öğrenci Transfer**: Sınıflar arası öğrenci transferi
+
+### 👥 Öğrenci Takibi
 - **Yetenek Takibi**: Öğrenci yeteneklerini kaydetme
 - **Gelişim Notları**: Yıl içi gelişim takibi
 - **Değerlendirme Notları**: Öğrenci değerlendirme notları
@@ -16,37 +31,58 @@ Ortaokul ve lise sınıf rehber öğretmenleri için geliştirilmiş öğrenci b
 - **Sağlık Bilgileri**: Öğrenci sağlık durumu kayıtları
 - **Özel Durumlar**: Öğrenci özel durumlarını kaydetme
 
-## Teknolojiler
+### 📢 İletişim
+- **Sınıf İlanları**: Sınıf duyuruları yayınlama
+- **WhatsApp Entegrasyonu**: Veli iletişimi için WhatsApp desteği
 
-- **Frontend**: React 18, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Veritabanı**: SQLite
-- **Dosya Yükleme**: Multer
-- **İkonlar**: Lucide React
+## 🛠️ Teknolojiler
 
-## Kurulum
+### Frontend
+- **React 18** - Modern UI framework
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **Lucide React** - Beautiful icons
+- **React Big Calendar** - Calendar component
+- **jsPDF & html2canvas** - PDF generation
 
-1. **Bağımlılıkları yükleyin:**
+### Backend
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **SQLite** - Lightweight database
+- **Multer** - File upload handling
+- **CORS** - Cross-origin resource sharing
+- **UUID** - Unique identifier generation
+
+## 📦 Kurulum
+
+1. **Repository'yi klonlayın:**
+   ```bash
+   git clone https://github.com/ababutcu/Sinif.git
+   cd Sinif
+   ```
+
+2. **Bağımlılıkları yükleyin:**
    ```bash
    npm install
    ```
 
-2. **Backend sunucusunu başlatın:**
+3. **Backend sunucusunu başlatın:**
    ```bash
    npm run server
    ```
 
-3. **Frontend geliştirme sunucusunu başlatın:**
+4. **Frontend geliştirme sunucusunu başlatın:**
    ```bash
    npm run dev
    ```
 
-4. **Tarayıcınızda açın:**
+5. **Tarayıcınızda açın:**
    ```
    http://localhost:3000
    ```
 
-## Kullanım
+## 🎯 Kullanım
 
 ### Eğitim Yılı Ekleme
 1. Üst menüde "Eğitim Yılı" seçicisinin yanındaki + butonuna tıklayın
@@ -69,28 +105,34 @@ Ortaokul ve lise sınıf rehber öğretmenleri için geliştirilmiş öğrenci b
    - Özel durumlar
 3. "Öğrenci Ekle" butonuna tıklayın
 
-### Öğrenci Detayları
-1. Öğrenci kartına tıklayarak detay sayfasına gidin
-2. Farklı sekmelerde:
-   - **Bilgiler**: Tüm öğrenci ve veli bilgileri
-   - **Yetenekler**: Öğrenci yeteneklerini ekleyin
-   - **Gelişim Notları**: Yıl içi gelişim notları
-   - **Değerlendirme Notları**: Değerlendirme notları
+### Rehberlik Planları
+1. Sınıf sayfasında "Rehberlik Planları" sekmesine gidin
+2. "Yeni Plan" butonuna tıklayın
+3. Plan bilgilerini doldurun
+4. Etkinlikler ekleyin ve dosya yükleyin
 
-## Veritabanı Yapısı
+### AI Raporları
+1. Sınıf sayfasında "AI Raporlar" sekmesine gidin
+2. Rapor türünü seçin
+3. "Rapor Oluştur" butonuna tıklayın
+
+## 🗄️ Veritabanı Yapısı
 
 Sistem aşağıdaki tabloları içerir:
-- `education_years`: Eğitim yılları
-- `classes`: Sınıflar
-- `students`: Öğrenciler
-- `mother_info`: Anne bilgileri
-- `father_info`: Baba bilgileri
-- `guardian_info`: Diğer veli bilgileri
-- `talents`: Yetenekler
-- `development_notes`: Gelişim notları
-- `evaluation_notes`: Değerlendirme notları
+- `education_years` - Eğitim yılları
+- `classes` - Sınıflar
+- `students` - Öğrenciler
+- `mother_info` - Anne bilgileri
+- `father_info` - Baba bilgileri
+- `guardian_info` - Diğer veli bilgileri
+- `talents` - Yetenekler
+- `development_notes` - Gelişim notları
+- `evaluation_notes` - Değerlendirme notları
+- `announcements` - Sınıf ilanları
+- `guidance_plans` - Rehberlik planları
+- `guidance_events` - Rehberlik etkinlikleri
 
-## API Endpoints
+## 🔌 API Endpoints
 
 ### Eğitim Yılları
 - `GET /api/education-years` - Tüm eğitim yıllarını listele
@@ -104,17 +146,54 @@ Sistem aşağıdaki tabloları içerir:
 - `GET /api/students/:classId` - Sınıftaki öğrencileri listele
 - `POST /api/students` - Yeni öğrenci ekle
 - `GET /api/students/detail/:studentId` - Öğrenci detaylarını getir
+- `POST /api/students/transfer` - Öğrenci transferi
 
-### Yetenekler
-- `GET /api/students/:studentId/talents` - Öğrenci yeteneklerini listele
-- `POST /api/students/:studentId/talents` - Yeni yetenek ekle
+### Rehberlik
+- `GET /api/guidance-plans/:classId` - Rehberlik planlarını listele
+- `POST /api/guidance-plans` - Yeni rehberlik planı ekle
+- `GET /api/guidance-events/:planId` - Etkinlikleri listele
+- `POST /api/guidance-events` - Yeni etkinlik ekle
 
-### Notlar
-- `GET /api/students/:studentId/development-notes` - Gelişim notlarını listele
-- `POST /api/students/:studentId/development-notes` - Yeni gelişim notu ekle
-- `GET /api/students/:studentId/evaluation-notes` - Değerlendirme notlarını listele
-- `POST /api/students/:studentId/evaluation-notes` - Yeni değerlendirme notu ekle
+### Veli Bilgileri
+- `GET /api/students/:studentId/guardians` - Veli bilgilerini listele
+- `POST /api/students/:studentId/guardians` - Yeni veli ekle
 
-## Lisans
+## 📱 Özellikler
 
-MIT License 
+### 📊 Raporlama
+- **Öğrenci Listesi PDF**: Sınıf öğrenci listesi
+- **Öğrenci Detay PDF**: Tek öğrenci detay raporu
+- **Rehberlik Raporu PDF**: Rehberlik planları ve etkinlikleri
+- **AI Raporları**: Otomatik analiz raporları
+
+### 📅 Takvim
+- **Aylık Görünüm**: Rehberlik etkinliklerini takvimde görüntüleme
+- **Etkinlik Detayları**: Etkinlik bilgilerini görüntüleme
+- **Dosya Erişimi**: Etkinlik belgelerine erişim
+
+### 🔄 Transfer
+- **Sınıf Transferi**: Öğrencileri sınıflar arası taşıma
+- **Eğitim Yılı Transferi**: Öğrencileri eğitim yılları arası taşıma
+
+## 🤝 Katkıda Bulunma
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
+3. Commit yapın (`git commit -m 'Add some AmazingFeature'`)
+4. Branch'i push edin (`git push origin feature/AmazingFeature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 👨‍💻 Geliştirici
+
+**ababutcu** - [GitHub](https://github.com/ababutcu)
+
+## 🙏 Teşekkürler
+
+- React ekibine modern UI framework için
+- Tailwind CSS ekibine utility-first CSS için
+- Lucide ekibine güzel ikonlar için
+- Tüm açık kaynak katkıda bulunanlara
