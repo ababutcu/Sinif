@@ -40,8 +40,18 @@
   "keywords": [
     "education",
     "student-management",
-    "school"
+    "school",
+    "guidance",
+    "classroom-management",
+    "react",
+    "typescript",
+    "sqlite"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": "ababutcu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ababutcu/Sinif.git"
+  },
+  "homepage": "https://github.com/ababutcu/Sinif#readme"
 }
